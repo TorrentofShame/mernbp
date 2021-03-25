@@ -1,0 +1,118 @@
+{
+  "name": "MERN-Boilerplate",
+  "version": "1.0.0",
+  "description": "MERN tech stack boilerplate",
+  "private": true,
+  "scripts": {
+    "test": "cross-env NODE_ENV=test echo test",
+    "build": "cross-env NODE_ENV=production webpack --mode=production",
+    "build:dev": "cross-env NODE_ENV=development webpack --mode=development",
+    "lint": "eslint client server",
+    "lint:fix": "eslint client server --fix",
+    "start": "npm run build&& node server",
+    "start:dev": "npm run build:dev&& node server",
+    "dev": "npm run build:dev&& node server",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "serve": "cross-env NODE_ENV=development webpack serve --open"
+  },
+  "author": {
+    "name": "Simon Weizman",
+    "email": "simon@torrentofshame.com",
+    "url": "https://simon.weizman.us"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/torrentofshame"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": "gitlab:torrentofshame/mern-boilerplate",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "express",
+    "mongodb",
+    "mongoose",
+    "passport"
+  ],
+  "homepage": "https://gitlab.com/torrentofshame/mern-boilerplate#readme",
+  "engines": {
+    "node": ">=14.15.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "autoprefixer": "^10.0.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.5.3",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "~1.4.4",
+    "copy-webpack-plugin": "^6.4.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mini-css-extract-plugin": "^1.3.2",
+    "mongoose": "^5.11.4",
+    "morgan": "~1.9.1",
+    "node-sass": "^5.0.0",
+    "node-sass-middleware": "0.11.0",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "postcss-loader": "^4.1.0",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "superagent": "^6.1.0",
+    "uuid": "^8.3.2",
+    "webpack": "^5.10.0",
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^5.4.0"
+  },
+  "devDependencies": {
+    "@react-bootstrap/babel-preset": "^1.2.0",
+    "@react-bootstrap/eslint-config": "^1.3.2",
+    "eslint": "^7.15.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-webpack-plugin": "^2.4.1",
+    "pre-commit": "^1.2.2",
+    "redux-devtools": "^3.7.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-pwa-manifest": "^4.3.0"
+  }
+}
